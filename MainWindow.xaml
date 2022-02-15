@@ -1,0 +1,81 @@
+﻿<Window x:Name="Main" x:Class="GeomAns.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeomAns"
+        mc:Ignorable="d"
+        Title="GeomAns" Height="450" Width="800" Icon="/MSumrWbyKI8.jpg">
+    <Grid>
+        <Menu x:Name="Menu1" Height="33" VerticalAlignment="Top" Background="{x:Null}" Margin="10,0,0,0" HorizontalAlignment="Left" Width="207">
+            <MenuItem x:Name="Figures" Width="30">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="free-icon-menu-483334.png"/>
+                </MenuItem.Background>
+                <Button x:Name="Point" Content="Point" Click="Point_Click"/>
+                <MenuItem Header="Lines">
+                    <Button x:Name="Line_segment" Content="Line segment" Click="Line_segment_Click"/>
+                    <Button x:Name="Ray" Content="Ray" Click="Ray_Click"/>
+                    <Button x:Name="Straight_line" Content="Straight line" Click="Straight_line_Click"/>
+                </MenuItem>
+                <MenuItem Header="Polygons">
+                    <MenuItem Header="Triangles">
+                        <Button x:Name="Arbitrary_triangle" Content="Arbitrary" Click="Arbitrary_triangle_Click"/>
+                        <Button Content="Acute"/>
+                        <Button Content="Obtuse"/>
+                        <Button Content="Right"/>
+                        <Button Content="Isosceles"/>
+                        <Button Content="Equilateral"/>
+                    </MenuItem>
+                    <MenuItem Header="Quadrilaterals">
+                        <Button Content="Arbitrary"/>
+                        <Button Content="Parallelogram"/>
+                        <Button Content="Trapezium"/>
+                        <Button Content="Rectangle"/>
+                        <Button Content="Rhombus"/>
+                        <Button Content="Square"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Circles">
+                    <Button Content="Circle"/>
+                    <Button Content="Arc"/>
+                    <Button Content="Oval"/>
+                </MenuItem>
+            </MenuItem>
+            <ToggleButton x:Name="Draw" Height="30" Width="30" Checked="Draw_Checked" Unchecked="Draw_Unchecked">
+                <ToggleButton.Background>
+                    <ImageBrush ImageSource="free-icon-pencil-483923.png"/>
+                </ToggleButton.Background>
+            </ToggleButton>
+            <Button x:Name="Color" Height="30" Width="30" Click="Color_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/-palette_90705.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Clear" Height="30" Width="30" Click="Clear_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="free-icon-delete-2089743.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Solve" Height="30" Width="30" Click="Solve_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="free-icon-checked-2089713.png"/>
+                </Button.Background>
+            </Button>
+        </Menu>
+        <Menu x:Name="Menu2" Height="68" VerticalAlignment="Top" HorizontalAlignment="Right" Width="42">
+            <Button x:Name="Settings" Height="30" Width="30" Click="Settings_call">
+                <Button.Background>
+                    <ImageBrush ImageSource="free-icon-menu-483345.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Exit" Height="30" Width="30" Click="Exit_call">
+                <Button.Background>
+                    <ImageBrush ImageSource="free-icon-logout-2089791.png"/>
+                </Button.Background>
+            </Button>
+        </Menu>
+        <Canvas x:Name="Working_area" Margin="10,38,0,0" Background="#FFECECEC" MouseMove="Working_area_MouseMove" MouseDown="Working_area_MouseDown" MouseUp="Working_area_MouseUp" Width="725" Height="363" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Window>

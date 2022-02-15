@@ -1,0 +1,18 @@
+﻿<Window x:Class="GeomAns.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeomAns"
+        mc:Ignorable="d"
+        Title="Build a " Height="172" Width="250" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="P1" Content="Point's 1 name:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="91"/>
+        <TextBox x:Name="Point_1_name" Margin="104,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="25" FontSize="14"/>
+        <Button x:Name="Build" Content="Build" Margin="136,13,0,0" IsDefault="True" Click="Build_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+        <Label x:Name="P2" Content="Point's 2 name:" Margin="10,55,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="91"/>
+        <TextBox x:Name="Point_2_name" Margin="104,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="25" FontSize="14"/>
+        <Label x:Name="P3" Content="Length:" Margin="10,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="91"/>
+        <TextBox x:Name="Length" Margin="104,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="25" FontSize="14"/>
+    </Grid>
+</Window>

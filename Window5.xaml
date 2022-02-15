@@ -1,0 +1,14 @@
+﻿<Window x:Class="GeomAns.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeomAns"
+        mc:Ignorable="d"
+        Title="ERROR" Height="144.687" Width="225.813" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="Label" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="63" Width="196"/>
+        <Button x:Name="B" Content="OK" Margin="70,78,71,0" VerticalAlignment="Top" IsCancel="True" IsDefault="True" Click="B_Click"/>
+
+    </Grid>
+</Window>

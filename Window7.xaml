@@ -1,0 +1,13 @@
+﻿<Window x:Class="GeomAns.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeomAns"
+        mc:Ignorable="d"
+        Title="Solution" Height="174.422" Width="354.905" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Дано: треугольник ABC: AB = 3, AC = 5, &lt;ABC = 90&#xD;&#xA;Найти: BC&#xD;&#xA;Решение:&#xD;&#xA;1) &lt;ABC = 90 ==&gt; ABC - прямоугольный треугольник&#xD;&#xA;2) По теореме Пифагора BC = sqrt(AC^2 - AB^2) =&#xD;&#xA;sqrt(5^2 - 3^2) = 4&#xD;&#xA;Ответ: 4" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="128" Width="327"/>
+
+    </Grid>
+</Window>
